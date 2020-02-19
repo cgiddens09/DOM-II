@@ -27,10 +27,17 @@ document.querySelectorAll('.nav-link').forEach(el => {
 
 //preventDefault
 
-const stopLink = document.querySelector('.nav-link');
-stopLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log('stopped the link');
+// const stopLink = document.querySelector('.nav-link');
+// stopLink.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     console.log('stopped the link');
+// })
+
+document.querySelectorAll('.nav-link').forEach(stopLink => {
+    stopLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log('stopped the link');
+    })
 })
 
 //page load
